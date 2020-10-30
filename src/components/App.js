@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import ImageSearch from "./ImageSearch";
 import Home from "./Home";
+import ImageSearchCss from './ImageSearchCss'
 
 
 
@@ -18,14 +19,18 @@ export default class App extends React.Component {
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">                            
                             <li class="nav-item">
-                                <a class="nav-link" href="/images">Images</a>
+                                <a class="nav-link" href="/images">Search One</a>
+                            </li>  
+                            <li class="nav-item">
+                                <a class="nav-link" href="/imagesCss">Search Two</a>
                             </li>                                                
                         </ul>
                     </div>
                 </nav>
                 <div className="main-route-place">
                     <Route exact path="/" component={Home} />
-                    <Route path="/images" component={ImageSearch} />                    
+                    <Route path="/images" component={ImageSearch} />
+                    <Route path="/imagesCss" component={ImageSearchCss} />
                 </div>
             </BrowserRouter >
         );
