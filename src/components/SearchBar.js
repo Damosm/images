@@ -3,25 +3,23 @@ import React from 'react';
 class SearchBar extends React.Component {
   state = { term: '' };
 
-  onFormSubmit = event => {
+  onClick = event => {
     event.preventDefault();
-    
+
     this.props.onSubmit(this.state.term);
   };
 
+  onChange = event => {    
+    this.setState({ term: event.target.value })
+  };
+
   render() {
-    return (
-      <div className="ui segment" style={{ backgroundColor: '#A6A8A7' }} >
-        <form onSubmit={this.onFormSubmit} className="ui form">
-          <div className="field">
-            <label style={{ color: 'white' }}>Recherche</label>
-            <input
-              type="text"
-              value={this.state.term}
-              onChange={e => this.setState({ term: e.target.value })}
-            />            
-          </div>
-        </form>
+    return (      
+      <div class="input-group mb-3">
+        <input type="text" value={this.state.term} onChange={this.onChange} class="form-control" placeholder="Recherche" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <div class="input-group-append">
+          <button onClick={this.onClick} class="btn btn-outline-secondary" type="button">Valider</button>
+        </div>
       </div>
     );
   }
