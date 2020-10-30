@@ -1,6 +1,6 @@
 import React from 'react';
 
-class SearchBar extends React.Component {
+export default class SearchBar extends React.Component {
   state = { term: '' };
 
   onClick = event => {
@@ -27,4 +27,3 @@ class SearchBar extends React.Component {
   }
 }
 
-export default SearchBar;
