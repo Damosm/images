@@ -16,10 +16,12 @@ class SearchBar extends React.Component {
   render() {
     return (      
       <div class="input-group mb-3">
-        <input type="text" value={this.state.term} onChange={this.onChange} class="form-control" placeholder="Recherche" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+        <form class="input-group mb-3" onSubmit={this.onClick}>
+        <input type="text" value={this.state.term}  onChange={this.onChange} class="form-control" placeholder="Recherche" aria-label="Recipient's username" aria-describedby="basic-addon2" />
         <div class="input-group-append">
-          <button onClick={this.onClick} class="btn btn-outline-secondary" type="button">Valider</button>
+          <button onClick={this.onClick}  class="btn btn-outline-secondary" style={{backgroundColor:"#A7A37E" ,color:"white"}} type="button">Valider</button>
         </div>
+        </form>
       </div>
     );
   }

@@ -21,7 +21,7 @@ export default function ImageGridList(props)  {
     const classes = useStyles();
     
     return (
-        <div className={classes.root}>
+        <div className={classes.root} style={{ backgroundColor: '#856D4D' }} >
             <GridList cellHeight={160} className={classes.gridList} cols={3}>
                 {props.images.map((tile) => (
                     <GridListTile key={tile.id} cols={1}>
