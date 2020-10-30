@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
-import img1 from '../images/4.jpg';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -18,9 +18,9 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function ImageGridList(props)  {
+export default function ImageGridList(props) {
     const classes = useStyles();
-    
+
     return (
         <div className={classes.root} style={{ backgroundColor: '#EFECCA' }} >
             <GridList cellHeight={160} className={classes.gridList} cols={3}>
@@ -30,7 +30,7 @@ export default function ImageGridList(props)  {
                     </GridListTile>
                 ))}
             </GridList>
-        </div>
+        </div >
     );
 }
 
