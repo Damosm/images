@@ -19,11 +19,11 @@ export default class App extends React.Component {
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">                            
                             <li class="nav-item">
-                                <a class="nav-link" href="/images">Search One</a>
+                                <a class="nav-link" href="/imagesCss">Search</a>
                             </li>  
-                            <li class="nav-item">
+                            {/* <li class="nav-item">
                                 <a class="nav-link" href="/imagesCss">Search Two</a>
-                            </li>                                                
+                            </li>                                                 */}
                         </ul>
                     </div>
                 </nav>
