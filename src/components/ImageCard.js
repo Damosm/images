@@ -7,6 +7,8 @@ class ImageCard extends React.Component {
     this.state = { spans: 0 };
 
     this.imageRef = React.createRef();
+
+    this.setSpans = this.setSpans.bind(this);
   }
 
   componentDidMount() {

@@ -8,32 +8,32 @@ export default class Home extends Component {
         return (
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+                <ol className="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" style={{ height: 550 }} src={img1} alt="1" />
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img className="d-block w-100" style={{ height: 550 }} src={img1} alt="1" />
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" style={{ height: 550 }} src={img2} alt="2" />
+                    <div className="carousel-item">
+                        <img className="d-block w-100" style={{ height: 550 }} src={img2} alt="2" />
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" style={{ height: 550 }} src={img3} alt="3" />
+                    <div className="carousel-item">
+                        <img className="d-block w-100" style={{ height: 550 }} src={img3} alt="3" />
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
                 </a>
                 <div>
-                    <h1 classe="titre" style={{ fontSize: 130, textAlign: 'right' }}> 
+                    <h1  style={{ fontSize: "calc(130px + 0.5vw)", textAlign: 'right' }}> 
                         Unsplash
                     </h1>
                 </div>
