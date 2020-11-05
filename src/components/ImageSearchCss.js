@@ -6,7 +6,15 @@ import ImageList from './ImageList'
 
 
 export default class ImageSearchCss extends Component {
-  state = { images: [] };
+
+  constructor(props){
+    super(props);
+
+    this.state = { images: [] };
+
+    this.onSearchSubmit = this.onSearchSubmit.bind(this);
+  }
+  
 
   onSearchSubmit = async term => {
     const response = await unsplash.get('/search/photos', {

@@ -1,7 +1,15 @@
 import React from 'react';
 
 export default class SearchBar extends React.Component {
-  state = { term: '' };
+
+  constructor(props){
+    super(props);
+
+    this.state = { term: '' };
+
+    this.onchange = this.onChange.bind(this);
+  }
+  
 
   onClick = event => {
     event.preventDefault();
