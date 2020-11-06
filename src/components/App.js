@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import ImageSearch from "./ImageSearch";
 import Home from "./Home";
 import ImageSearchCss from './ImageSearchCss';
 import Clock from './Clock';
@@ -13,7 +12,7 @@ export default class App extends React.Component {
         return (
             <BrowserRouter>
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <a className="navbar-brand" href="/">Home</a>
+                    <a className="navbar-brand" href="/images">Home</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -32,8 +31,8 @@ export default class App extends React.Component {
                     </div>
                 </nav>
                 <div className="main-route-place">
-                    <Route exact path="/" component={Home} />
-                    <Route path="/images" component={ImageSearch} />
+                    <Route exact path="/images" component={Home} />
+                    {/* <Route path="/images" component={ImageSearch} /> */}
                     <Route path="/imagesCss" component={ImageSearchCss} />
                 </div>
             </BrowserRouter >
