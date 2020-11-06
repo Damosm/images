@@ -20,10 +20,7 @@ export default class App extends React.Component {
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <a className="nav-link" href="/images/imagesCss">Search</a>
-                            </li>
-                            {/* <li className="nav-item">
-                                <a className="nav-link" href="/imagesCss">Search Two</a>
-                            </li> */}
+                            </li>                            
                         </ul>
                     </div>
                     <div>
@@ -31,8 +28,7 @@ export default class App extends React.Component {
                     </div>
                 </nav>
                 <div className="main-route-place">
-                    <Route exact path="/images" component={Home} />
-                    {/* <Route path="/images" component={ImageSearch} /> */}
+                    <Route exact path="/images" component={Home} />                    
                     <Route path="/images/imagesCss" component={ImageSearchCss} />
                 </div>
             </BrowserRouter >
